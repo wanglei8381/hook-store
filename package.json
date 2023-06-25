@@ -1,5 +1,5 @@
 {
-  "name": "hook-store",
+  "name": "@wanglei8381/hook-store",
   "version": "0.1.0",
   "description": "A light data management tool for react framework.",
   "jsnext:source": "./src/index.ts",

@@ -5,7 +5,7 @@ HookStore 是一个轻量级的 React 状态管理 hooks 库
 现在我们来编写一个计数器 store
 
 ```typescript
-import { BaseStore } from '@ecom/hook-store';
+import { BaseStore } from '@wanglei8381/hook-store';
 
 class CountStore extends BaseStore {
   count = 0;
@@ -27,7 +27,7 @@ class CountStore extends BaseStore {
 
 ## store 的使用
 ```typescript
-import { useStore } from '@ecom/hook-store';
+import { useStore } from '@wanglei8381/hook-store';
 const Component = () => {
   const store = useStore(CountStore);
   return (
@@ -44,7 +44,7 @@ const Component = () => {
 ## store 的作用域
 当我们需要扩展 HookStore 的作用域，使用全局 store。
 ```typescript
-import { StoreProvider, useStore } from '@ecom/hook-store';
+import { StoreProvider, useStore } from '@wanglei8381/hook-store';
 const Child = () => {
   const store = useStore(CountStore);
   return (

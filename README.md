@@ -8,7 +8,7 @@ English | [简体中文](https://github.com/wanglei8381/hook-store/blob/main/REA
 Now let's write a counter store
 
 ```typescript
-import { BaseStore } from '@ecom/hook-store';
+import { BaseStore } from '@wanglei8381/hook-store';
 
 class CountStore extends BaseStore {
   count = 0;
@@ -31,7 +31,7 @@ class CountStore extends BaseStore {
 ## Using the store
 
 ```typescript
-import { useStore } from '@ecom/hook-store';
+import { useStore } from '@wanglei8381/hook-store';
 const Component = () => {
   const store = useStore(CountStore);
   return (
@@ -50,15 +50,15 @@ const Component = () => {
 When we need to extend the scope of HookStore, use the global store.
 
 ```typescript
-import { StoreProvider, useStore } from '@ecom/hook-store';
+import { StoreProvider, useStore } from '@wanglei8381/hook-store';
 const Child = () => {
   const store = useStore(CountStore);
   return (
     <div>
       <div>{store.count}</div>
-      <button onClick={() => store.add(1)}>加1</button>
-      <button onClick={() => store.times(2)}>乘2</button>
-      <button onClick={() => store.reset()}>复位</button>
+      <button onClick={() => store.add(1)}>add 1</button>
+      <button onClick={() => store.times(2)}>multi 2</button>
+      <button onClick={() => store.reset()}>reset</button>
     </div>
   );
 };
