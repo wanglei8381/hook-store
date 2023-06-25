@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@code.byted.org:temai/hook-store.git"
+    "url": "git@github.com:wanglei8381/hook-store.git"
   },
   "license": "MIT",
-  "author": "chenyong.heyo <chenyong.heyo@bytedance.com>",
+  "author": "wanglei8381 <wanglei8381@163.com>",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.0",
     "rollup-plugin-dts": "^4.1.0",
@@ -24,6 +24,10 @@
     "rollup": "^2.67.3",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
   }

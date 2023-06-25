@@ -1,7 +1,7 @@
 # HookStore
 A light data management tool for react framework.
 
-English | [简体中文](https://github.com/wanglei8381/hook-store/master/README.zh-CN.md)
+English | [简体中文](https://github.com/wanglei8381/hook-store/blob/main/README.zh-CN.md)
 
 ## Defining the store
 
